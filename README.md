@@ -16,9 +16,12 @@ license: mit
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/Streamlit-1.35%2B-FF4B4B.svg)](https://streamlit.io/)
+[![Live Demo](https://img.shields.io/badge/Streamlit%20Cloud-Live%20Demo-FF4B4B?logo=streamlit&logoColor=white)](https://fitsense-interactive-fit-confidence-engine-klfndnazffrbkyigrkx.streamlit.app)
 [![Analytics](https://img.shields.io/badge/Engine-DuckDB%20%7C%20Pandas%20%7C%20Scikit--Learn-orange.svg)](https://duckdb.org/)
 [![Tests](https://img.shields.io/badge/Tests-Pytest%20Passing-brightgreen.svg)](https://pytest.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🚀 **Live Cloud Deployment**: [**fitsense-interactive-fit-confidence-engine-klfndnazffrbkyigrkx.streamlit.app**](https://fitsense-interactive-fit-confidence-engine-klfndnazffrbkyigrkx.streamlit.app)
 
 ---
 
@@ -160,15 +163,23 @@ fit_engine/
 
 ---
 
-## 6. Local Setup & Execution
+## 6. Live App & Local Setup
 
-### Prerequisites
+### 🌐 Live Hosted Web Application
+Try the engine directly in your browser without local setup:  
+👉 **[Launch FitSense Live on Streamlit Cloud](https://fitsense-interactive-fit-confidence-engine-klfndnazffrbkyigrkx.streamlit.app)**
+
+---
+
+### Local Development & Execution
+
+#### Prerequisites
 - Python 3.10, 3.11, or 3.12 installed.
 
-### Step 1: Clone and Navigate
+#### Step 1: Clone and Navigate
 ```bash
-git clone <repo-url>
-cd fit_engine
+git clone https://github.com/shivenpatro/FitSense-Interactive-Fit-Confidence-Engine.git
+cd FitSense-Interactive-Fit-Confidence-Engine
 ```
 
 ### Step 2: Install Dependencies

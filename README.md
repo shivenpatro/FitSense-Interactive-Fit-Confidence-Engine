@@ -1,3 +1,15 @@
+---
+title: FitSense Interactive Fit Confidence Engine
+emoji: 👗
+colorFrom: pink
+colorTo: red
+sdk: streamlit
+sdk_version: "1.35.0"
+app_file: app/main.py
+pinned: false
+license: mit
+---
+
 # FitSense: Interactive Fit Confidence Engine
 
 > **A Production-Grade Sizing Recommendation & Reverse Logistics Optimization Showcase for Fashion E-Commerce (Myntra PM / CX & Supply Chain Showcase)**

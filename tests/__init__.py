@@ -1,0 +1,1 @@
+"""FitSense test suite package."""

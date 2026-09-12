@@ -284,24 +284,23 @@ with tab_cx:
     col_pdp, col_widget = st.columns([1.1, 1.2], gap="large")
 
     with col_pdp:
-        st.markdown(f"""
-        <div class="pdp-card">
-            <span class="brand-badge">{sku_meta['brand'].upper()}</span>
-            <h2 style="margin: 0.2rem 0; font-weight: 800; font-size: 1.5rem; color: #282c3f;">{sku_meta['name']}</h2>
-            <p style="color: #535766; font-size: 0.9rem; margin-bottom: 0.8rem;">SKU: {sku_meta['item_id']} | Category: {sku_meta['category']}</p>
-            
-            <div style="display: flex; align-items: baseline; margin-bottom: 1rem;">
-                <span class="price-tag">₹{int(sku_meta['base_price'] * 0.65)}</span>
-                <span class="original-price">₹{sku_meta['base_price']}</span>
-                <span class="discount-pct">(35% OFF)</span>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.2rem;">
-                <span style="background: #03a685; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.85rem;">4.2 ★</span>
-                <span style="color: #535766; font-size: 0.85rem; font-weight: 600;">1,420 Ratings & 380 Verified Reviews</span>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="pdp-card">'
+            f'<span class="brand-badge">{sku_meta["brand"].upper()}</span>'
+            f'<h2 style="margin: 0.2rem 0; font-weight: 800; font-size: 1.5rem; color: #282c3f;">{sku_meta["name"]}</h2>'
+            f'<p style="color: #535766; font-size: 0.9rem; margin-bottom: 0.8rem;">SKU: {sku_meta["item_id"]} | Category: {sku_meta["category"]}</p>'
+            f'<div style="display: flex; align-items: baseline; margin-bottom: 1rem;">'
+            f'<span class="price-tag">₹{int(sku_meta["base_price"] * 0.65)}</span>'
+            f'<span class="original-price">₹{sku_meta["base_price"]}</span>'
+            f'<span class="discount-pct">(35% OFF)</span>'
+            f'</div>'
+            f'<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.2rem;">'
+            f'<span style="background: #03a685; color: white; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.85rem;">4.2 ★</span>'
+            f'<span style="color: #535766; font-size: 0.85rem; font-weight: 600;">1,420 Ratings & 380 Verified Reviews</span>'
+            f'</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
 
         # SVG Stylized Fashion Garment Card
         if sku_meta["category"] == "Dress":

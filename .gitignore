@@ -31,7 +31,9 @@ env/
 .env.local
 .env.*.local
 
-# IDE & Editor files
+# Operating System & IDE metadata
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
 *.swp
@@ -42,7 +44,11 @@ env/
 .coverage
 htmlcov/
 
-# Large datasets & raw cache
+# Database locks & journals
+*.db-journal
+*.sqlite-journal
+
+# Large raw datasets & logs
 data/raw/*.csv
 data/raw/*.parquet
 *.log
